@@ -97,4 +97,8 @@
         mapDispatchToProps(react-redux)
 
 ### JSX
+<<<<<<< HEAD
     - Đơn giản là viết logic bên trong HTML
+=======
+    - Đơn giản là viết logic bên trong HTML
+>>>>>>> 91b600a344e92a33bbecf15485b736b9671d8c27

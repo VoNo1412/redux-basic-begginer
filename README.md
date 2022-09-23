@@ -1,70 +1,96 @@
-# Getting Started with Create React App
+<!-- yarn add express -->
+<!-- yarn server -->
+<!-- yarn start -->
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### REST API
+    - Là một ứng dụng cho phép chuyển đổi cấu trúc dữ liệu với những phương thức giúp kết nối với các thưc viện và ứng dụng khác nhau.
+    Thông qua những phương thức có sẵn của HTTP như GET POST DELETE PUT và trả về dữ liệu phổ biến như JSON & XML
 
-## Available Scripts
+### Callback
+    - Callback là một function được function khác chỉ định làm đối số. Sau đó nó sẽ được gọi trong hàm chứa nó để hoàn thành một quy trình công việc.
 
-In the project directory, you can run:
+### Closure
+    - Closure là sự kết hợp giữa các func với nhau. Một closure có thể truy cập bên ngoài của một hàm từ một hàm bên trong.
 
-### `yarn start`
+### DOM (Document Object Model)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+    + DOM có 5 - 6 loại
+        + DOM element: lưu trữ toàn bộ các thành phần của website vào bên trong document.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+        + DOM HTML: cho phép thay đổi thuộc tính hoặc nội dung của tag html
+        
+        + DOM CSS: cho phép thay đổi định dạng CSS của tag HTML
 
-### `yarn test`
+        + DOM events: Cho phép nắm bắt các sự kiện như onlick, onchange, onmouse...
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+        + DOM listener: cho phép lắng nghe các sự kiện tác động đến tag HTML
 
-### `yarn build`
+    + Thuộc tính
+        + textContent
+        + innerHTML
+        + className
+        + id
+        + tagName
+        + outerHTML
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+    + method:
+        getElemenByID
+        getElemensByClassName
+        getElementsByTagName
+        appendChild
+        removeChild
+        getAttr
+        setAttr
+    
+    + Relations:
+        parentNode
+        childNode
+        firstChild
+        lastChild
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Lifecycle 
+    - Gồm 3 giai đoạn
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+    + Mounting
+    + Updateting
+    + Unmouting
 
-### `yarn eject`
+    + Mounting
+        - constuctor()
+        - getDerivedStateFromProps()
+        - render()
+        - componentDidMount()
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+    ...etc
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### Redux
+    Life(View - Action - State)
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+    <!-- react -->
+    Components call redux events(through actions)
 
-## Learn More
+    <!-- redux -->
+        <!-- actions -->
+            - process api / call api
+            - saving data to reducer(switch case)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+        <!-- reducer -->
+            - Loop inside action (switch case)
+            - saving data to state(redux)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
+        <!-- mapStateToProps -->
+            - connect react-redux
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+        <!-- mapDispatchToProps -->
+            - fire actions with component click
 
-### Analyzing the Bundle Size
+    <!-- Review -->
+        action -> procees data saving data
+        reducer(switch case) -> state(redux)
+        mapStateToProps(react-redux)
+        mapDispatchToProps(react-redux)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### JSX
+    - Đơn giản là viết logic bên trong HTML

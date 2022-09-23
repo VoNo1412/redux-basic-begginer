@@ -1,0 +1,12 @@
+
+.icons {
+    margin-right: 10px;
+    line-height: 30px;
+    cursor: pointer;
+}
+
+.form-control:focus:nth-child(odd) {
+    outline: none !important;
+    border: none !important;
+    box-shadow: none;
+}
